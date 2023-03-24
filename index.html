@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Website</title>
+	<title>Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<header>
-		<h1>Welcome to my website!</h1>
+		<h1>Welcome to the landing page for RF IoT Security Layer </h1>
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="projects.html">Discovery</a></li>
+				<li><a href="Literature.html">Literature</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<h2>About Me</h2>
-		<p>Insert some information about yourself here.</p>
+		<section id="Research-Question">
+			<h2>Research Question</h2>
+			<p>How can we conceal RFID tags and their origin through the use of RFID signal manipulation for healthcare purposes?</p>
+		</section>
+		<section id="summary">
+			<h2>Summary</h2>
+			<p style="text-indent: 20px;">As technology advances, so does the value of data through the amount of data being created and used and sent around. In the healthcare field where such data consists of information about patients and various other sensitive things, a leak of data means a compromise of the privacy of the patient, and that which relates to them. As the use of Radio Frequency Identification (RFID) technology advances in the healthcare field, that means a potential possibility of data being stolen, or not handled properly and ending up in the wrong hands.</p>
+			<br>
+			<p style="text-indent: 20px;">The way that RFID enable passive data collection, so that heart rate and respiration can be observed by simply observing ambient wireless signals is through sending that the data between tag and reader through the reader sending a signal to power on the tag and the tag sending the data which it has stored once that signal is sent but that this makes it easier to eavesdrop on one's sensitive data since it's embedded within existing wireless signals unencrypted, since it is quite literally floating in the air through radio waves. RFID encryption and storing is usually done after data is collected, hence there is a quite literal data link between the point where the data is being collected to the point where data is stored and encrypted. This creates a vulnerability in cybersecurity and overall privacy as 1.) data can be stolen/intercepted, and 2.) that link creates a location point when information is being transferred, leading to other things being revealed.</p>
+			<br>	
+			<p style="text-indent: 20px;">To address these problems, this study investigates how RFID tags can be concealed and their origin hidden through signal manipulation. The study explores power settings, physical features of RFID, and external devices that can manipulate RFID signals in real-time. The results of this study provide insights into potential solutions for enhancing RFID security in healthcare settings, as well as the possibility of creating new forms of encryption through signal manipulation. Our findings contribute to the development of advanced cybersecurity protocols that ensure patient privacy and prevent data breaches in the healthcare sector, by changing the transmitter power to make it more difficult to grab and get meaningful data from observing the physical wireless streams, which unless you know the pattern of the wireless transmitter power levels used would be hard to decipher, and kind of encrypted in a sense thus providing a layer of security. Another way is by swapping EPC tags around to make pinpointing harder or creating random variations in the Electronic Product Code (EPC) RFID tags. In effect, these properties are encrypted and add on a layer of security that would cover that time the data is being transferred in the air.</p>
+		</section>
+		<section id="about-me">
+			<h2>About Me</h2>
+			<p>I am a senior studying Computer Science at Ursinus College. My name is Jonas Ling, and this research is overseen by Dr. Bill Mongan.</p>
+		</section>
 	</main>
 </body>
 </html>
