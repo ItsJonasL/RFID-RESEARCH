@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Research Update!</h1>
+        <nav>
+            <ul>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Discovery.html">Discovery</a></li>
+                    <li><a href="Literature.html">Literature</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="Background">
+			<h2>Background Information</h2>
+			<li> RFID (Radio Frequency Identification) can be thought of as a system that that sends out data when triggered through Radio Waves. ​</li>
+            <li> Interrogator able to receive that info from RFID tags and read & store it. ​</li>
+		</section>
+        <section id="Objective">
+			<h2>Objective</h2>
+			<p>Because biometrics can be inferred from the reflections of RF energy, we can randomize the transmit power and tag ID to obfuscate those markers and to protect privacy.​</p>
+		</section>
+        <article>
+            <h2> Research Step by Step Process</h2>
+            <p>Posted on April 18th, 2023</p>
+            <ul>
+				<li>Creation of the question and reading of literature to build up some common idea of what and how RFID works.  </li>
+				<li>Creation of skeleton code that uses the interrogator library to conduct simple test on how RFID work, and how it can be modified and experimented on.​</li>
+				<li>Developed prototypes with the experimental ideas of range, power of interrogator, and reassigning EPC codes on RFID tags. ​</li>
+				<li>Determined that it was possible to change power levels of interrogator in a way that would allow it to be set to  any value while running a sleep cycle. Also, discovered that EPC codes are indeed viable option since reassigning does not interfere with power level sleep cycle. ​</li>
+                <li>Implemented randomization function in code of power level and EPC code reassignment using a dictionary. Then implement formula to calibrate the received RSSI against it. ​</li>
+                <li>Final test on code that makes sure randomize function works, and  optimization of runtime, and wrap up of website​</li>
+			</ul>
+        </article>
+    </main>
+    
+</body>
+</html>
